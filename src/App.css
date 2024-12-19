@@ -1,0 +1,19 @@
+.calculator {
+  width: 320px;
+  margin: auto;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button-grid > button:nth-child(-n+4) {
+  grid-column: span 1;
+}
+
+#display {
+  font-size: 2rem;
+  height: 60px;
+}
